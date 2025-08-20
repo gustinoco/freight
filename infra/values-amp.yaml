@@ -1,0 +1,10 @@
+# values-amp.yaml
+prometheus:
+  prometheusSpec:
+    externalLabels:
+      cluster: your-eks-cluster
+      env: prod
+    remoteWrite:
+      - url: https://aps-workspaces.us-east-1.amazonaws.com/workspaces/WS_ID/api/v1/remote_write
+        sigv4:
+          region: us-east-1
