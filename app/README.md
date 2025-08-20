@@ -117,3 +117,25 @@ Principais objetivos:
 ## Arquitetura do código:
 
 ![diagramacodigo.png](../diagramacodigo.png)
+
+
+## Débitos técnicos e próximos passos
+
+- Observabilidade e desempenho
+    - [ ] Testes de carga/estresse para validar autoscaling (KEDA/HPA), latência e throughput.
+    - [ ] Metas de SLO/SLI e métricas de negócio (cotações OK, 4xx/5xx, p95).
+
+- Segurança
+    - [ ] Validação robusta contra payloads maliciosos (limites de tamanho, formatos, sanitização).
+    - [ ] Rate limiting e proteção contra brute force.
+    - [ ] Configuração de CORS e cabeçalhos de segurança.
+
+- Arquitetura e qualidade
+    - [ ] Paginação e ordenação nas listagens (ex.: page, size, sort).
+    - [ ] Padronização de respostas de erro (envelope consistente).
+    - [ ] Testes automatizados (unidade, integração e contrato).
+
+- Operação e ambientes
+    - [ ] Separação de ambientes: dev, test e prod (profiles e propriedades dedicadas).
+    - [ ] Externalização e rotação de segredos com AWS Secrets Manager.
+    - [ ] Pipeline de CI (GitHub Actions) com build, testes, análise estática e artefatos.
