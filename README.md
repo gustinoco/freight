@@ -21,7 +21,7 @@ Principais objetivos:
 - cURL ou HTTP client para testar endpoints
 
 # Diagrama API
-![diagrama api.drawio.png](../diagrama%20api.drawio.png)
+![diagrama api.drawio.png](diagrama api.drawio.png)
 
 
 ## Endpoins criados
@@ -116,7 +116,7 @@ Principais objetivos:
 
 ## Arquitetura do código:
 
-![diagramacodigo.png](../diagramacodigo.png)
+![diagramacodigo.png](diagramacodigo.png)
 
 
 ## Débitos técnicos e próximos passos
